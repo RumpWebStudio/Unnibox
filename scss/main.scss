@@ -1,0 +1,29 @@
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,regular,600);
+@import url('https://fonts.cdnfonts.com/css/mont');
+@import url(https://fonts.googleapis.com/css?family=Inter:300,600);
+@import url('https://fonts.cdnfonts.com/css/peach-chery');
+@import url(https://myfonts.ru/myfonts?fonts=mak);
+
+
+// helpers
+@import './base/vars';
+@import './base/helpers';
+@import './base/reset';
+@import './base/repeat';
+
+// blocks
+@import './blocks/header';
+@import './blocks/home';
+@import "./blocks/footer";
+@import "./blocks/home";
+@import "./blocks/team";
+@import "./blocks/info";
+@import "./blocks/composition";
+@import "./blocks/perks";
+@import "./blocks/opinion";
+@import "./blocks/instruction";
+@import "./blocks/free";
+@import "./blocks/questions";
+@import "./blocks/arrange";
+@import "./blocks/testimonial";

@@ -1,0 +1,248 @@
+.arrange {
+
+    padding: 100px 0px;
+
+    &__container {
+        border-radius: 50px;
+        background: linear-gradient(41deg, #8ab4e4 0%, #e2e2e2 100%);
+        padding: 0px 71px 40px 73px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 95px;
+        line-height: 105%;
+        color: #fff;
+        margin-bottom: 19px;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133%;
+        color: #fff;
+
+        & span {
+            font-weight: 400;
+        }
+
+        margin-bottom: 60px;
+    }
+
+    &__lower-content {
+        display: flex;
+        gap: 156px;
+    }
+
+    &__button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 27px;
+
+        border-radius: 47px;
+        background: #fff;
+        padding: 19px 59px 20px 59px;
+        border: 3px solid white;
+
+        &:hover {
+            border: 3px solid #4c89e4;
+            color: #4C89E4;
+        }
+    }
+
+    &__addition {
+        display: flex;
+        position: relative;
+    }
+
+    &__addition-text {
+        max-width: 194px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        color: #4c89e4;
+    }
+
+    &__image {
+        margin-top: -200px;
+    }
+
+    &__steps {
+        border-radius: 50px;
+        background: linear-gradient(42deg, #4c89e4 0%, #95bdec 100%);
+        padding: 24px 109px 22px 110px;
+        display: flex;
+        align-items: center;
+        gap: 105px;
+    }
+
+    &__step {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__step-number {
+        font-weight: 700;
+        font-size: 67px;
+        line-height: 140%;
+        color: rgba(208, 223, 245, 0.3);
+    }
+
+    &__step-text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 162%;
+        color: #fff;
+    }
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1250px) {
+    .arrange {
+        &__content {
+            flex-direction: column;
+        }
+
+        &__container {
+            padding: 30px 71px 40px 73px;
+        }
+
+        &__title {
+            max-width: 700px;
+            font-size: 60px;
+            text-align: center;
+            margin: 0px auto 19px auto;
+        }
+
+        &__image img {
+            width: 350px;
+        }
+
+        &__subtitle {
+            text-align: center;
+            font-size: 21px;
+            max-width: 700px;
+            margin: 0px auto 60px auto;
+        }
+
+        &__lower-content {
+            justify-content: center;
+            margin-bottom: 200px;
+        }
+
+        &__addition {
+            display: none;
+        }
+
+        &__steps {
+            padding: 14px 49px 12px 40px;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        &__step-number {
+            font-size: 55px;
+        }
+
+        &__step {
+            max-width: 492px;
+        }
+    }
+
+    .number-1 {
+        font-size: 59px;
+    }
+}
+
+@media (max-width: 768px) {
+    .arrange {
+        &__title {
+            font-size: 45px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__button {
+            padding: 19px 39px 20px 39px;
+        }
+
+        &__link {
+            font-size: 21px;
+        }
+
+        &__image img {
+            width: 250px;
+        }
+
+        &__step-text {
+            font-size: 12px;
+        }
+
+        &__step-number {
+            font-size: 47px;
+        }
+    }
+
+    .number-1 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 528px) {
+    .arrange {
+
+        padding: 50px 0px;
+
+        &__container {
+            padding: 30px 15px 40px 15px;
+        }
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__button-icon img {
+            width: 35px;
+        }
+
+        &__button {
+            min-width: 270px;
+            padding: 19px 19px 20px 19px;
+        }
+
+        &__link {
+            font-size: 18px;
+        }
+
+        &__image img {
+            width: 150px;
+        }
+
+        &__steps {
+            border-radius: 30px;
+        }
+
+        &__step-number {
+            font-size: 39px;
+        }
+
+        &__step-text {
+            font-size: 10px;
+        }
+    }
+
+    .number-1 {
+        font-size: 43px;
+    }
+}

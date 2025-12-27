@@ -1,0 +1,238 @@
+.perks {
+
+    padding: 100px 0px;
+    background-color: #94B9E4;
+
+    &__upper-content {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    &__title {
+        max-width: 950px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 108%;
+        color: rgba(255, 255, 255, 0.8);
+
+        margin-bottom: 25px;
+
+        & span {
+            color: #fff;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 108%;
+        color: #fff;
+    }
+
+    &__button {
+        min-width: 450px;
+        border-radius: 47px;
+        background: #fff;
+        padding: 25px 53px 30px 49px;
+
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        max-height: 97px;
+        user-select: none;
+
+        &:hover {
+            background: #84a6d8;
+
+            .perks__button-text {
+                color: #fff;
+            }
+        }
+    }
+
+    &__button-text {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 232%;
+        color: #4c89e4;
+    }
+
+    &__image {
+        margin-bottom: 35px;
+    }
+
+    &__row {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 20px;
+
+        border: 1px solid #fff;
+        border-radius: 20px;
+
+        padding: 20px 20px 30px 20px;
+        color: #4c89e4;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.5);
+
+            .perks__item-title {
+                color: #4c89e4;
+            }
+
+            .perks__item-text {
+                color: #518ce4;
+            }
+        }
+    }
+
+    &__item-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        color: #fff;
+        margin-top: 7px;
+        margin-bottom: 11px;
+    }
+
+    &__item-text {
+        max-width: 294px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 144%;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1250px) {
+    .perks {
+        &__upper-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 40px;
+            margin-bottom: 45px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        &__button {
+            margin: 0px auto;
+            padding: 15px 43px 20px 39px;
+        }
+
+        &__button-text {
+            font-size: 22px;
+        }
+
+        &__image {
+            text-align: center;
+        }
+
+        &__image img {
+            width: 700px;
+        }
+
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0px auto;
+        }
+
+        &__item {
+            padding: 10px 10px 20px 10px;
+            max-width: 394px;
+            min-width: 360px;
+        }
+
+        &__item-title {
+            font-size: 16px;
+        }
+
+        &__item-text {
+            font-size: 14px;
+        }
+
+        &__item-icon img{
+            width: 20px;
+            height: 22px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .perks {
+        &__image img {
+            width: 500px;
+        }
+
+        &__button-text {
+            font-size: 20px;
+        }
+
+        &__button {
+            min-width: inherit;
+        }
+
+        &__row {
+            justify-content: center;
+        }
+
+        &__item {
+            min-width: 240px;
+        }
+
+        &__item-text {
+            max-width: 150px;
+            font-size: 11px;
+        }
+
+        &__item-title {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .perks {
+
+        padding: 70px 0px;
+        
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__button {
+            padding: 15px 20px 15px 20px;
+            gap: 10px;
+        }
+
+        &__button-text {
+            font-size: 15px;
+        }
+
+        &__button-img img {
+            width: 32px;
+        }
+
+        &__image img {
+            width: 280px;
+        }
+    }
+}

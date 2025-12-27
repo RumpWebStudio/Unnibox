@@ -1,0 +1,490 @@
+.composition {
+
+    padding: 150px 0px;
+
+    &__label {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 136px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 108%;
+        color: rgba(6, 6, 6, 0.8);
+        margin-bottom: 25px;
+
+        & span {
+            color: #6ca8ee;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 108%;
+        color: #060606;
+    }
+
+    &__upper-addition {
+        margin-top: 30px;
+    }
+
+    &__addition-icon {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    &__addition-text {
+        text-align: right;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 144%;
+        text-align: right;
+        color: rgba(74, 74, 74, 0.9);
+    }
+
+    &__content {
+        position: relative;
+        margin-bottom: 250px;
+    }
+
+    &__title-first {
+        font-family: 'Peach Chery';
+
+        position: relative;
+        font-weight: 400;
+        font-size: 209px;
+        line-height: 78%;
+        color: #6ca8ee;
+        margin-bottom: 16px;
+
+        z-index: 2;
+    }
+
+    &__title-second {
+        font-family: 'Peach Chery';
+
+        position: relative;
+        font-weight: 400;
+        font-size: 209px;
+        line-height: 78%;
+        color: #6ca8ee;
+        text-align: right;
+
+        z-index: 2;
+    }
+
+    &__text {
+        max-width: 400px;
+        min-height: 110px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 171%;
+        color: #000;
+        margin-top: -140px;
+    }
+
+    &__decor {
+        position: absolute;
+        right: -10%;
+        top: -60%;
+        z-index: -3;
+    }
+
+    &__lower-content {
+        display: flex;
+        align-items: center;
+        gap: 179px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 23px;
+    }
+
+    &__button {
+        position: relative;
+        cursor: pointer;
+
+        border-radius: 10px;
+        background: #c6d7eb;
+
+        width: 158px;
+        height: 62px;
+
+        &:hover {
+            background: #94b8e2;
+        }
+
+        z-index: 2;
+    }
+
+    &__button-img {
+        position: absolute;
+        top: -78px;
+    }
+
+    &__addition {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        gap: 29px;
+        z-index: 4;
+
+        margin-top: -50px;
+    }
+
+    &__addition-button {
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        gap: 27px;
+        min-width: 480px;
+
+        border: 2px solid #6ca8ee;
+        border-radius: 47px;
+        background: #6ca8ee;
+        padding: 20px 60px 23px 59px;
+
+        &:hover {
+            background: #5693d8;
+        }
+
+        &:active {
+            background: #8ba2bd;
+        }
+    }
+
+    &__addition-link {
+        max-width: 309px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 232%;
+        color: #fff;
+    }
+
+    &__additiond-magnifying-glass {
+        cursor: pointer;
+
+        border: 2px solid #6ca8ee;
+        border-radius: 47px;
+        padding: 21px 19px 20px 22px;
+
+        &:hover {
+            border: 2px solid #096bdb;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 17px;
+        right: -200px;
+
+        z-index: 3;
+    }
+
+    &__slider-slide {
+        position: relative;
+    }
+}
+
+.button-1 {
+    left: 22px;
+}
+
+.button-2 {
+    left: 43px;
+}
+
+.button-3 {
+    left: 48px;
+}
+
+.button-4 {
+    left: 34px;
+}
+
+.button-5 {
+    left: 27px;
+}
+
+.image-2 {
+    top: 107px;
+}
+
+.image-3 {
+    top: -10px;
+}
+
+.image-4 {
+    top: 83px;
+}
+
+.image-5 {
+    top: -10px;
+}
+
+.image-6 {
+    top: 22px;
+}
+
+.text-5 {
+    max-width: 219px;
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1250px) {
+    .composition {
+        &__title {
+            font-size: 30px;
+        }
+
+        &__upper-addition {
+            margin-top: 0;
+        }
+
+        &__addition-icon img {
+            width: 42px;
+            height: 42px;
+        }
+
+        &__addition-text {
+            font-size: 15px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+        }
+
+        &__image {
+            top: 120px;
+            right: -10px;
+        }
+
+        &__image img {
+            width: 420px;
+        }
+
+        &__title-first {
+            position: relative;
+            z-index: 4;
+
+            font-size: 98px;
+            text-align: center;
+        }
+
+        &__title-second {
+            position: relative;
+            z-index: 4;
+
+            font-size: 98px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            position: relative;
+            z-index: 4;
+
+            font-size: 13px;
+            max-width: 300px;
+            margin-top: 0px;
+
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        &__content {
+            margin-bottom: 120px;
+        }
+
+        &__lower-content {
+            flex-direction: column;
+        }
+
+        &__buttons {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        &__addition {
+            margin-top: -150px;
+        }
+
+        &__addition-button {
+            min-width: inherit;
+            padding: 15px 55px 18px 54px;
+        }
+
+        &__addition-link {
+            font-size: 20px;
+        }
+
+        &__additiond-magnifying-glass {
+            width: 87px;
+            height: 87px;
+
+            & img {
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .composition {
+
+        padding: 100px 0px;
+
+        &__label {
+            flex-direction: column-reverse;
+        }
+
+        &__addition-icon {
+            text-align: center;
+        }
+
+        &__addition-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+
+        &__image {
+            top: 300px;
+        }
+
+        &__title-first {
+            font-size: 77px;
+        }
+
+        &__title-second {
+            font-size: 77px;
+        }
+
+        &__decor {
+            right: inherit;
+            top: -130%;
+        }
+
+        &__addition-link {
+            font-size: 17px;
+        }
+
+        &__buttons {
+            gap: 60px;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .composition {
+
+        padding: 50px 0px;
+
+        &__title {
+            font-size: 26px;
+        }
+
+        &__subtitle {
+            font-size: 15px;
+        }
+
+        &__title-first {
+            font-size: 57px;
+        }
+
+        &__title-second {
+            font-size: 57px;
+        }
+
+        &__image {
+            top: 400px !important;
+        }
+
+        &__image img {
+            width: 350px;
+        }
+
+        &__buttons {
+            gap: 40px;
+        }
+
+        &__button {
+            width: 80px;
+        }
+
+        &__button-img img {
+            width: 60px;
+        }
+
+        &__content {
+            margin-bottom: 70px;
+        }
+
+        &__label {
+            margin-bottom: 70px;
+        }
+
+        &__addition-link {
+            font-size: 11px;
+        }
+
+        &__addition-button {
+            padding: 10px 10px 10px 10px;
+            gap: 10px;
+        }
+
+        &__addition-button-img img {
+            width: 11px;
+        }
+
+        &__additiond-magnifying-glass {
+            width: 67px;
+            height: 67px;
+            padding: 12px 19px 19px 10px;
+        }
+    }
+
+    .button-1 {
+        top: -17px;
+        left: 10px;
+    }
+
+    .button-2 {
+        top: -53px;
+        left: 10px;
+    }
+
+    .button-3 {
+        left: 10px;
+        top: -73px;
+    }
+
+    .button-4 {
+        top: -30px;
+        left: 10px;
+    }
+
+    .button-5 {
+        top: -18px;
+        left: 10px;
+    }
+}

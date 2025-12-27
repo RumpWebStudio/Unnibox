@@ -1,0 +1,230 @@
+.questions {
+
+    padding: 150px 0px;
+
+    &__upper-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 55px;
+    }
+
+    &__addition-icon {
+        margin-bottom: 20px;
+    }
+
+    &__addition-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 144%;
+        color: rgba(74, 74, 74, 0.9);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 108%;
+        text-align: right;
+        color: rgba(6, 6, 6, 0.8);
+
+        & span {
+            color: #6ca8ee;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 45px;
+        justify-content: center;
+    }
+
+    &__question {
+        position: relative;
+        max-width: 518px;
+        min-height: 0px;
+        border-radius: 50px;
+        background-color: #DEE1E8;
+
+        padding: 45px 59px 40px 49px;
+
+        overflow: hidden;
+        min-height: 255px;
+        transition: all 0.3s linear;
+    }
+
+    &__question-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 142%;
+        color: #060606;
+        margin-bottom: 26px;
+    }
+
+    &__question-text {
+        display: none;
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: #fff;
+
+        overflow: hidden;
+        height: 10px;
+        transition: all 1s ease-in-out;
+
+        & span {
+            font-weight: 600;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+        }
+    }
+
+    &__question-text.active {
+        display: block;
+        height: 320px;
+    }
+
+    &__question.active {
+        display: block;
+        min-height: 455px;
+    }
+
+    &__question-button {
+        cursor: pointer;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        border-radius: 100%;
+        border: 3px solid #DEE1E8;
+    }
+
+    &__question-button-left {
+        cursor: pointer;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        border-radius: 100%;
+        border: 1px solid #6CA8EE;
+    }
+}
+
+
+.disable {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1250px) {
+    .questions {
+        &__title {
+            font-size: 32px;
+        }
+
+        &__addition-text {
+            font-size: 15px;
+        }
+
+        &__question {
+            max-width: 290px;
+            min-height: 150px;
+            padding: 25px 29px 40px 29px;
+        }
+
+        &__question-title {
+            font-size: 15px;
+        }
+
+        &__question-text {
+            font-size: 13px;
+        }
+
+        &__question.active {
+            min-height: inherit;
+        }
+
+        &__question-text.active {
+            height: inherit;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .questions {
+
+        &__upper-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__addition-text {
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            font-size: 35px;
+        }
+
+        &__question {
+            max-width: 280px;
+            min-height: 100px;
+        }
+
+        &__question-title  {
+            font-size: 15px;
+        }
+
+        &__question-button img {
+            width: 50px;
+            height: 50px;
+        }
+
+        &__question-button-left img {
+            width: 50px;
+            height: 50px;
+        }
+
+        &__content {
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .questions {
+
+        padding: 50px 0px;
+        
+        &__question-button img {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__question-button-left img {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__question-button-left {
+            right: 10px;
+        }
+
+        &__question-button {
+            right: 10px;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
+}

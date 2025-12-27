@@ -1,0 +1,344 @@
+.team {
+
+    padding: 100px 0px 170px 0px;
+
+    &__upper-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    &__misson-icon {
+        width: 60px;
+        height: 60px;
+
+        border-radius: 100%;
+        background-color: #e0e0e0;
+        padding: 14px 14px 14px 16px;
+        margin-bottom: 20px;
+
+        & img {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    &__mission-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 144%;
+        color: rgba(74, 74, 74, 0.9);
+        max-width: 235px;
+    }
+
+    &__title {
+        max-width: 1081px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 108%;
+        text-align: right;
+        color: #4d4c4a;
+
+        & span {
+            color: #6ca8ee;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        gap: 45px;
+    }
+
+    &__card {
+        min-width: 508px;
+
+        position: relative;
+        border-radius: 50px;
+        background: #dee1e8;
+        padding: 48px 56px 50px 50px;
+    }
+
+    &__card-start {
+        display: none;
+
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+    }
+
+    &__card-creator {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 208px;
+    }
+
+    &__card-title {
+        font-weight: 600;
+        font-size: 30px;
+        color: #060606;
+        margin-bottom: 12px;
+    }
+
+    &__card-profession {
+        font-weight: 300;
+        font-size: 16px;
+        color: rgba(6, 6, 6, 0.8);
+    }
+
+    &__card-about {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 167%;
+        color: rgba(6, 6, 6, 0.8);
+        margin-bottom: 17px;
+    }
+
+    &__card-quote {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 160%;
+        color: #4c89e4;
+    }
+
+    &__picture {
+        display: none;
+
+        position: absolute;
+        z-index: 2;
+        top: 0;
+
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+    }
+
+    &__click {
+        z-index: 3;
+        display: none;
+
+        position: absolute;
+        border-radius: 50px;
+        background: #6ca8ee;
+        transform: rotate(7deg);
+        padding: 58px 74px 57px 56px;
+
+        bottom: -250px;
+        left: 0;
+
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+    }
+
+    &__click-name {
+        font-family: "Inter", sans-serif;
+        max-width: 400px;
+        font-weight: 600;
+        font-size: 45px;
+        color: #fff;
+        line-height: 118%;
+        margin-bottom: 2px;
+    }
+
+    &__click-profession {
+        font-weight: 300;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 149px;
+    }
+
+    &__click-about {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 167%;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    &__click-quote {
+        font-weight: 950;
+        font-size: 20px;
+        line-height: 160%;
+        color: #fff;
+    }
+}
+
+.active {
+    display: block;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.team__card {
+    &:hover {
+        .team__card-start {
+            display: none;
+        }
+
+        .team__picture,
+        .team__click {
+            display: block;
+        }
+    }
+
+    .team__picture,
+    .team__click {
+        display: none;
+    }
+}
+
+@media (max-width: 1677px) {
+    .team {
+        &__cards {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__card {
+            min-height: 568px;
+            max-width: 488px;
+            min-width: 488px;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .team {
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__mission-text {
+            font-size: 14px;
+        }
+
+        &__misson-icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        &__misson-icon img {
+            width: 20px;
+            height: 20px;
+        }
+
+        &__cards {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        &__upper-content {
+            flex-direction: column;
+        }
+
+        &__mission {
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        &__misson-icon {
+            margin: 0px auto 10px auto;
+        }
+
+        &__mission-text {
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .team {
+
+        padding: 50px 0px;
+
+        &__card-creator {
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 108px;
+        }
+
+        &__card {
+            padding: 48px 15px 50px 15px;
+            min-width: 288px;
+            min-height: 430px;
+        }
+
+        &__card-about {
+            text-align: center;
+        }
+
+        &__card-quote {
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 26px;
+        }
+
+        &__upper-content {
+            margin-bottom: 40px;
+        }
+
+        &__card-title {
+            font-size: 25px;
+        }
+
+        &__card-profession {
+            font-size: 14px;
+        }
+
+        &__card-creator {
+            margin-bottom: 50px;
+        }
+
+        &__card-about {
+            font-size: 14px;
+        }
+
+        &__card-quote {
+            font-size: 16px;
+        }
+    }
+
+    .team__card {
+        &:hover {
+            .team__card-start {
+                display: block;
+            }
+
+            .team__picture,
+            .team__click {
+                display: none;
+            }
+        }
+
+        .team__picture,
+        .team__click {
+            display: none;
+        }
+    }
+}

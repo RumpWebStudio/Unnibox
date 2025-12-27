@@ -1,0 +1,362 @@
+.home {
+
+    padding: 50px 0px 100px 0px;
+
+    &__upper-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    &__season-kit-slider-content {
+        display: flex;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    &__season-kit-slider-title {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 126%;
+        color: #060606;
+    }
+
+    &__season-kit-slider-text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 126%;
+        color: rgba(6, 6, 6, 0.8);
+    }
+
+    &__product-slider {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+    }
+
+    &__product-slider-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: right;
+        color: #6ca8ee;
+        margin-bottom: 13px;
+
+        max-width: 275px;
+    }
+
+    &__product-slider-text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 167%;
+        text-align: right;
+        color: rgba(74, 74, 74, 0.8);
+    }
+
+    &__title-background {
+        position: relative;
+
+        margin: 0px auto;
+        text-align: center;
+        margin-top: -130px;
+    }
+
+    &__product {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+    }
+
+    &__product img {
+        transform: translate(-50%, -50%);
+    }
+
+    &__lower-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__steps-wrap {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 22px;
+    }
+
+    &__steps-icon {
+        border-radius: 100%;
+        background-color: #e0e0e0;
+        padding: 14px;
+
+        & img {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    &__steps {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 238%;
+        color: rgba(74, 74, 74, 0.9);
+    }
+
+    &__lower-content {
+        margin-top: -180px;
+    }
+
+    &__lower-content-title {
+        position: relative;
+        max-width: 558px;
+        min-width: 552px;
+
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 104%;
+        color: #060606;
+
+        & span {
+            color: #6ca8ee;
+        }
+
+        z-index: 2;
+    }
+
+    &__lower-content-button {
+        position: relative;
+        margin-top: 80px;
+    }
+
+    &__lower-content-decor {
+        position: absolute;
+        top: -180px;
+        left: -265px;
+        z-index: -1;
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+
+    border-radius: 47px;
+    background: #6ca8ee;
+    padding: 19px 54px 20px 60px;
+
+    &__link {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 118%;
+        color: #fff;
+    }
+
+    &:hover {
+        background: #4885ca;
+    }
+}
+
+.animation-word {
+    display: inline-block;
+}
+
+
+.home__season-kit-slider-content,
+.home__product-slider,
+.home__steps,
+.home__lower-content-title {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.6s linear 0s;
+}
+
+.home__title-background,
+.home__product {
+    opacity: 0;
+    /* Изначально невидимый */
+    transform: scale(0.5);
+    /* Изначально уменьшен */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.home__season-kit-slider-content._active,
+.home__product-slider._active,
+.home__steps._active,
+.home__lower-content-title._active {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.home__title-background._active,
+.home__product._active {
+    opacity: 1;
+    /* Полностью видимый */
+    transform: scale(1);
+    /* Нормальный размер */
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1431px) {
+    .home {
+
+        padding: 50px 0px 50px 0px;
+
+        &__upper-content {
+            margin-bottom: 100px;
+        }
+
+        &__title-background img {
+            width: 95%;
+            height: 95%;
+        }
+
+        &__lower-content {
+            margin-top: -10px;
+        }
+
+        &__product {
+            rotate: -3deg;
+            top: 47%;
+        }
+
+        &__season-kit-slider-title {
+            font-size: 17px;
+        }
+
+        &__season-kit-slider-text {
+            font-size: 17px;
+        }
+
+        &__product-slider-title {
+            font-size: 20px;
+        }
+
+        &__product-slider-text {
+            font-size: 16px;
+        }
+
+        &__steps {
+            font-size: 18px;
+        }
+
+        &__lower-content-title {
+            font-size: 40px;
+        }
+
+        &__lower-content {
+            flex-direction: column;
+        }
+
+        &__steps-wrap {
+            margin-top: 30px;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        &__lower-content-title {
+            text-align: center;
+        }
+
+        &__lower-content-button {
+            margin-top: 30px;
+        }
+
+        &__lower-content-decor {
+            top: -128px;
+            left: -184px;
+        }
+
+        &__lower-content-decor img {
+            width: 600px;
+            height: 300px;
+        }
+    }
+
+    .button {
+        padding: 14px 34px 15px 30px;
+    }
+
+    .button__link {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        &__steps {
+            font-size: 16px;
+        }
+
+        &__lower-content-title {
+            font-size: 33px;
+        }
+    }
+
+    .button {
+        &__link {
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .home {
+        &__upper-content {
+            flex-direction: column;
+        }
+
+        &__product-slider-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        &__product-slider-text {
+            display: none;
+        }
+
+        &__steps-icon {
+            width: 46px;
+            height: 46px;
+        }
+
+        &__steps-icon img {
+            width: 18px;
+            height: 18px;
+        }
+
+        &__steps {
+            font-size: 14px;
+        }
+
+        &__lower-content-title {
+            font-size: 28px;
+            min-width: 0px;
+        }
+
+        &__lower-content-decor {
+            top: -88px;
+            left: -104px;
+        }
+
+        &__lower-content-decor img {
+            width: 400px;
+            height: 200px;
+        }
+    }
+
+    .button {
+        gap: 10px;
+        padding: 8px 25px 9px 21px;
+
+        &__link {
+            font-size: 13px;
+        }
+
+        &__icon img {
+            width: 35px;
+            height: 32px;
+        }
+    }
+}
